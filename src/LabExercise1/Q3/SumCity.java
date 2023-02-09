@@ -1,6 +1,6 @@
 package LabExercise1.Q3;
 
-import Q1.MethodDemo;
+import LabExercise1.Q1.MethodDemo;
 
 import java.util.Scanner;
 
@@ -28,12 +28,16 @@ public class SumCity {
         String charOne = input.next();//Accepts user input
         System.out.print("Enter a second character: ");//Prompts user input
         String charTwo = input.next();//Accepts user input
-        System.out.println("The sum of r and t is "+sumValues(charOne.charAt(0),charTwo.charAt(0))+", whose equivalent integer value is " + sumValues(charOne,charTwo));
+        System.out.println("The sum of r and t is "+sumValues(charOne.charAt(0),charTwo.charAt(0))+", whose equivalent integer value is " + sumValues(charOne,charTwo) + "\n");
         //Prints out ASCII equivalent of the sum of charOne and charTwo and the integer value
-
+        System.out.print("Enter your full name: ");
+        input.nextLine();
+        String name = input.nextLine();
+        System.out.printf("%s \n",sumValues("My name is ", name));
+        MethodDemo.myFooter(3);
     }
-    public static int sumValues(String str1, String  str2){
-        return (int)str1.charAt(0) + (int)str2.charAt(0);
+    public static String sumValues(String str1, String str2){
+        return str1+str2;
     }
     //Converts string into ASCII numbers and returns the sum of the two values
     public static double sumValues(double num1, double num2){
