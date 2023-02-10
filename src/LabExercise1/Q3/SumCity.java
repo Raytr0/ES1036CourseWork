@@ -28,7 +28,7 @@ public class SumCity {
         String charOne = input.next();//Accepts user input
         System.out.print("Enter a second character: ");//Prompts user input
         String charTwo = input.next();//Accepts user input
-        System.out.println("The sum of r and t is "+sumValues(charOne.charAt(0),charTwo.charAt(0))+", whose equivalent integer value is " + sumValues(charOne,charTwo) + "\n");
+        System.out.println("The sum of " + charOne + " and "+ charTwo +" is " + sumValues(charOne.charAt(0),charTwo.charAt(0))+", whose equivalent integer value is " + sumValues((int)charOne.charAt(0),(int)charTwo.charAt(0)) + "\n");
         //Prints out ASCII equivalent of the sum of charOne and charTwo and the integer value
         System.out.print("Enter your full name: ");//prompts the user to input their name
         input.nextLine();//Clear input for scanner
