@@ -1,6 +1,6 @@
 package LabExercise1.Q2;
 
-import LabExercise1.Q1.MethodDemo;
+import Q1.MethodDemo;
 
 import java.util.Scanner;
 
